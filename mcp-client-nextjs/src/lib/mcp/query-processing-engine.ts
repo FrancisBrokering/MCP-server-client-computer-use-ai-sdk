@@ -224,7 +224,7 @@ export async function processUserQuery(query: string, maxTokens = 1000000, maxIt
     
     // Call Claude with tools and trimmed history using retry logic
     const response = await callAnthropicWithRetry({
-      model: "claude-3-7-sonnet-20250219",
+      model: "claude-opus-4-20250514",
       max_tokens: 1024,
       messages: trimmedHistory,
       tools,
